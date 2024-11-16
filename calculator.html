@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #260226, #130210);
+
+        }  
+        .cal{
+            border: 1px solid #717371;
+            padding: 20px;
+            border-radius: 16px;
+            background-color: transparent;
+            box-shadow: 0px 3px 15px rgba(245, 3, 3, 0.5);
+        }
+        input{
+            width: 320px;
+            border: none;
+            padding: 24px;
+            margin: 10px;
+            background-color: transparent;
+            box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+            text-align: right;
+            font-size: 40px;
+            cursor: pointer;
+            color: aliceblue;
+        }
+        input::placeholder {
+            color: white;
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            border: none;
+            color: white;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: transparent;
+            font-size: 25px;
+            box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+        }
+        .first-btn{
+            color: rgb(30, 185, 30);
+        }
+        .equal-btn{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal">
+       <input type="text" placeholder="0" id="result">
+            <div>
+                <button class="first-btn">AC</button>
+                <button class="first-btn">DEL</button>
+                <button class="first-btn">%</button>
+                <button class="first-btn">/</button>
+            </div>
+            <div>
+                <button>9</button>
+                <button>8</button>
+                <button>7</button>
+                <button class="first-btn">*</button>
+            </div>
+            <div>
+                <button>6</button>
+                <button>5</button>
+                <button>4</button>
+                <button class="first-btn">-</button>
+            </div>
+            <div>
+                <button>3</button>
+                <button>2</button>
+                <button>1</button>
+                <button class="first-btn">+</button>
+            </div>
+            <div>
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="equal-btn">=</button>
+            </div>
+    </div>
+</body>
+<script src = "calculator.js"></script>
+</html>
